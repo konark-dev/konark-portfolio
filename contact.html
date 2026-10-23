@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Konark Agarwal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Your navigation header here -->
+     <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo">Konark Agarwal</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link">My Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <h1 class="page-title">Get In Touch</h1>
+            <p class="page-subtitle">I'm always open to discussing new opportunities and interesting projects</p>
+            
+            <!-- Message Status -->
+            <div id="messageStatus" class="message-status"></div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Let's work together</h2>
+                    <p>Feel free to reach out if you're looking for a developer, have a question, or just want to connect.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email</h3>
+                                <p>konarkagarwal9999@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Location</h3>
+                                <p>Jaipur, Rajasthan<br>INDIA</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/Konark-Agarwal" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/konark-agarwal-3a4373375" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://x.com/konark_agarwal6" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- <div class="email-runner">
+                    <h3>This message can't wait to reach me! 🏃‍♂️</h3>
+                    <div class="track">
+                        <a href="#contact-form" class="running-email">
+                            <span class="email-emoji">📧</span>
+                            <span class="email-text">Send Message</span>
+                            <div class="running-legs">
+                                <div class="leg"></div>
+                                <div class="leg"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <p class="funny-text">"I'm sprinting to deliver your message!"</p>
+                </div>-->
+
+                <!-- Simple form that appears when clicked -->
+                <!-- <div id="contact-form" style="display: none;">
+                    <form action="https://formsubmit.co/konarkagarwal9999@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="New Portfolio Contact!">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://yourportfolio.com/thank-you.html">
+                        
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="text" name="subject" placeholder="Subject" required>
+                        <textarea name="message" placeholder="Your Message" required rows="5"></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div> -->
+                <div class="cute-animation">
+                    <h3>Let's be friends! 🤝</h3>
+                    
+                    <div class="character">
+                        <div class="robot">
+                            <div class="robot-head">
+                                <div class="robot-face">
+                                    <div class="robot-eye left-eye"></div>
+                                    <div class="robot-eye right-eye"></div>
+                                    <div class="robot-mouth"></div>
+                                </div>
+                                <div class="robot-antenna"></div>
+                            </div>
+                            <div class="robot-body">
+                                <div class="robot-arm left-arm"></div>
+                                <div class="robot-arm right-arm"></div>
+                                <div class="robot-screen">
+                                    <div class="screen-text">Hello!</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="floating-hearts">
+                        <div class="heart">❤️</div>
+                        <div class="heart">💻</div>
+                        <div class="heart">🚀</div>
+                        <div class="heart">⭐</div>
+                    </div>
+                    
+                    <p class="cute-text">Ready to create something amazing together!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Your footer here -->
+
+   <script>
+        // ===== MOBILE NAVIGATION TOGGLE =====
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        // Toggle mobile menu
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.navbar') && navMenu.classList.contains('active')) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+
+        // ===== EMAILJS CONTACT FORM =====
+        // Initialize EmailJS with your Public Key
+        emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS Public Key
+
+        const contactForm = document.getElementById('contactForm');
+        const messageStatus = document.getElementById('messageStatus');
+        const submitBtn = document.getElementById('submitBtn');
+
+        // Show message status
+        function showStatus(message, type) {
+            const icon = type === 'success' ? 'fa-check-circle' : 
+                         type === 'error' ? 'fa-exclamation-circle' : 
+                         'fa-spinner fa-spin';
+            
+            messageStatus.innerHTML = `
+                <i class="fas ${icon}"></i>
+                <span>${message}</span>
+            `;
+            messageStatus.className = `message-status ${type}`;
+            messageStatus.style.display = 'block';
+            
+            // Auto hide success messages after 5 seconds
+            if (type === 'success') {
+                setTimeout(() => {
+                    messageStatus.style.display = 'none';
+                }, 5000);
+            }
+            
+            // Auto hide error messages after 8 seconds
+            if (type === 'error') {
+                setTimeout(() => {
+                    messageStatus.style.display = 'none';
+                }, 8000);
+            }
+        }
+
+        // Handle form submission
+        contactForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const subject = formData.get('subject');
+            const message = formData.get('message');
+            
+            // Basic validation
+            if (!name || !email || !subject || !message) {
+                showStatus('Please fill in all required fields.', 'error');
+                return;
+            }
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                showStatus('Please enter a valid email address.', 'error');
+                return;
+            }
+            
+            // Show loading state
+            submitBtn.classList.add('btn-loading');
+            submitBtn.disabled = true;
+            showStatus('Sending your message...', 'loading');
+            
+            try {
+                // Send email using EmailJS with your SMTP service
+                const response = await emailjs.send(
+                    'YOUR_SERVICE_ID', // Replace with your EmailJS Service ID
+                    'YOUR_TEMPLATE_ID', // Replace with your EmailJS Template ID
+                    {
+                        from_name: name,
+                        from_email: email,
+                        subject: subject,
+                        message: message,
+                        to_email: 'konarkagarwal9999@gmail.com',
+                        reply_to: email
+                    }
+                );
+                
+                if (response.status === 200) {
+                    showStatus('Thank you! Your message has been sent successfully. I\'ll get back to you soon.', 'success');
+                    contactForm.reset();
+                } else {
+                    throw new Error('Failed to send message');
+                }
+                
+            } catch (error) {
+                console.error('Email sending failed:', error);
+                showStatus('Sorry, there was an error sending your message. Please try again or email me directly.', 'error');
+            } finally {
+                // Reset button state
+                submitBtn.classList.remove('btn-loading');
+                submitBtn.disabled = false;
+            }
+        });
+
+        // Clear error message when user starts typing
+        contactForm.addEventListener('input', function() {
+            if (messageStatus.classList.contains('error')) {
+                messageStatus.style.display = 'none';
+            }
+        });
+
+        // Set active nav link based on current page
+        function setActiveNavLink() {
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            navLinks.forEach(link => {
+                const linkHref = link.getAttribute('href');
+                if (linkHref === currentPage) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        }
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            setActiveNavLink();
+            console.log('Contact page initialized successfully!');
+        });
+    </script>
+</body>
+</html>
+
+
