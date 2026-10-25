@@ -1,136 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Konark Agarwal</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f3f1eb">
+  <meta name="description" content="About Konark Agarwal — Computer science student at PIET Jaipur, software builder, and web developer.">
+  <title>About — Konark Agarwal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation Header -->
-    <header>
-        <nav class="navbar">
-            <div class="nav-container">
-                <a href="index.html" class="nav-logo">Konark Agarwal</a>
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="about.html" class="nav-link active">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="projects.html" class="nav-link">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.html" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div>
-        </nav>
-    </header>
+  <div class="scroll-progress" aria-hidden="true"><span id="progressBar"></span></div>
 
-    <!-- About Section -->
-    <section class="about">
-        <div class="container">
-            <h1 class="page-title">About Me</h1>
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>Hello! I'm Konark, a passionate Web Developer</h2>
-                    <p>
-                        With months of hands-on experience in web development, I specialize in 
-                        building responsive, user-friendly websites and applications. 
-                        I’m passionate about transforming complex ideas into clean, 
-                        efficient, and visually engaging digital experiences.
-                    </p>
-                    <p>
-                        My journey began in a small office, and since then, I’ve worked with a 
-                        range of modern technologies and frameworks. I’m constantly exploring new tools, 
-                        refining my skills, and taking on challenging projects that push creative and 
-                        technical boundaries.
-                    </p>
-                    
-                    <div class="experience">
-                        <h3>Experience & Education</h3>
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <h4>Schooling From - Central Academy</h4>
-                                <span class="date">2010 - 2024</span>
-                                <p></p>
-                            </div>
-                            <div class="timeline-item">
-                                <h4>Web Developer - Media City</h4>
-                                <span class="date">May(2025) - August(2025)</span>
-                                <p>Developed and maintained client websites and applications.</p>
-                            </div>
-                            <div class="timeline-item">
-                                <h4>B-Tech Computer Science - College</h4>
-                                <span class="date">August(2025) - Present</span>
-                                <p>Graduating with Passion, focusing on web technologies and more...</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="about-skills">
-                    <h3>Technical Skills</h3>
-                    <div class="skills-categories">
-                        <div class="skill-category">
-                            <h4>Frontend</h4>
-                            <ul>
-                                <li>HTML5 & CSS3</li>
-                                <li>JavaScript (ES6+)</li>
-                                <!-- <li>React.js</li>
-                                <li>Vue.js</li>
-                                <li>TypeScript</li> -->
-                            </ul>
-                        </div>
-                        <div class="skill-category">
-                            <h4>Backend</h4>
-                            <ul>
-                                <li>Node.js</li>
-                                <!-- <li>Express.js</li> -->
-                                <li>Python</li>
-                                <!-- <li>MongoDB</li> -->
-                                <li>MySQL</li>
-                            </ul>
-                        </div>
-                        <div class="skill-category">
-                            <h4>Tools</h4>
-                            <ul>
-                                <li>Git & GitHub</li>
-                                <!-- <li>Docker</li>
-                                <li>AWS</li>
-                                <li>Webpack</li>
-                                <li>Figma</li> -->
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+  <header class="site-header">
+    <a class="brand" href="index.html#home" aria-label="Konark Agarwal home">
+      <span class="brand-mark">K<span>/</span></span>
+      <span class="brand-name">KONARK AGARWAL <small>CS STUDENT · BUILDER</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" type="button">
+      <span></span><span></span>
+    </button>
+    <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+      <a href="index.html#work" class="nav-link">Selected work <sup>01</sup></a>
+      <a href="about.html" class="nav-link active">About <sup>02</sup></a>
+      <a href="index.html#now" class="nav-link">Now <sup>03</sup></a>
+      <a href="contact.html" class="nav-link">Contact <sup>04</sup></a>
+    </nav>
+    <a class="header-cta" href="mailto:konarkagarwal9999@gmail.com">Get in touch <span>↗</span></a>
+  </header>
+
+  <main class="page-grid subpage-hero">
+    <div>
+      <div class="kicker"><span class="live-dot"></span> 02 / THE PERSON <span class="kicker-rule"></span> BACKGROUND &amp; SKILLS</div>
+      <h1 class="subpage-title">Curious by default.<br><em>Practical by choice.</em></h1>
+      <p class="subpage-lead">
+        I'm Konark — studying Computer Science at PIET Jaipur. I specialize in building responsive, useful applications and learning through continuous hands-on experimentation.
+      </p>
+
+      <div class="hero-links" style="margin-bottom: 40px; flex-direction: row; flex-wrap: wrap; gap: 14px;">
+        <a class="button button-dark" href="index.html#work">Explore my work <span>↘</span></a>
+        <a class="button button-copy" id="copyEmailBtn" data-email="konarkagarwal9999@gmail.com" aria-label="Copy email address" style="background: var(--ink); color: var(--paper);">
+          <span class="copy-icon">📋</span> Copy email
+          <span class="copy-toast" id="copyToast" role="status" aria-live="polite">Copied to clipboard! ✓</span>
+        </a>
+        <a class="button button-outline-light" href="contact.html" style="color: var(--ink); border-color: var(--line);">Get in touch <span>↗</span></a>
+      </div>
+
+      <div class="about-grid" style="border-top: 1px solid var(--line); padding-top: 40px;">
+        <div>
+          <div class="section-index" style="color: var(--blue);">EXPERIENCE &amp; EDUCATION</div>
+          <h2 style="font: 800 clamp(28px, 4vw, 40px)/1.1 var(--display); letter-spacing: -0.05em; margin: 12px 0 20px;">
+            Where I've been<br><em>and what I'm learning.</em>
+          </h2>
+          <p style="color: #696b63; font-size: 14px; line-height: 1.8; margin-bottom: 25px;">
+            My journey started with curious exploration, moved through hands-on development work for client sites at Media City, and continues today with rigorous studies in CS fundamentals and algorithmic problem solving.
+          </p>
+
+          <div class="experience-timeline">
+            <div class="experience-item">
+              <span class="experience-period">AUG 2025 — PRESENT</span>
+              <div>
+                <h4>B-Tech Computer Science — PIET Jaipur</h4>
+                <p>Focusing on C++, data structures &amp; algorithms, backend architecture, and core software engineering fundamentals.</p>
+              </div>
             </div>
+            <div class="experience-item">
+              <span class="experience-period">MAY 2025 — AUG 2025</span>
+              <div>
+                <h4>Web Developer — Media City</h4>
+                <p>Developed and maintained client websites and commercial digital products, including responsive web platforms such as RudraGrow.</p>
+              </div>
+            </div>
+            <div class="experience-item">
+              <span class="experience-period">2010 — 2024</span>
+              <div>
+                <h4>Schooling — Central Academy</h4>
+                <p>Completed foundational education with strong mathematics, science, and computer science coursework.</p>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>✵ Created By Konark Agarwal ✵</p>
-                <div class="social-links">
-                    <a href="https://github.com/Konark-Agarwal"><i class="fab fa-github"></i></a>
-                    <a href="www.linkedin.com/in/konark-agarwal-3a4373375"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://x.com/konark_agarwal6"><i class="fab fa-twitter"></i></a>
-                </div>
+        <div>
+          <div class="section-index" style="color: var(--blue);">TECHNICAL TOOLKIT</div>
+          <h2 style="font: 800 clamp(28px, 4vw, 40px)/1.1 var(--display); letter-spacing: -0.05em; margin: 12px 0 20px;">
+            Technologies &amp;<br><em>core disciplines.</em>
+          </h2>
+
+          <div style="display: flex; flex-direction: column; gap: 24px;">
+            <div class="contact-card-box" style="margin-top: 0; padding: 24px;">
+              <h3 style="font: 700 16px var(--display); margin: 0 0 10px;">Languages</h3>
+              <div class="stack-tags">
+                <span>C++</span><span>JavaScript (ES6+)</span><span>Python</span><span>HTML5 &amp; CSS3</span><span>MySQL</span>
+              </div>
             </div>
-        </div>
-    </footer>
 
-    <script src="js/script.js"></script>
+            <div class="contact-card-box" style="margin-top: 0; padding: 24px;">
+              <h3 style="font: 700 16px var(--display); margin: 0 0 10px;">Focus Areas</h3>
+              <div class="stack-tags">
+                <span>Data Structures &amp; Algorithms</span><span>Backend Engineering</span><span>Web Development</span><span>Information Hierarchy</span>
+              </div>
+            </div>
+
+            <div class="contact-card-box" style="margin-top: 0; padding: 24px;">
+              <h3 style="font: 700 16px var(--display); margin: 0 0 10px;">Tools &amp; Workflow</h3>
+              <div class="stack-tags">
+                <span>Git &amp; GitHub</span><span>VS Code</span><span>Linux</span><span>Responsive Web</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" style="background: var(--ink); color: var(--paper); border-top: none; margin: 0; padding: 22px var(--gutter);">
+    <a class="brand footer-brand" href="index.html#home">
+      <span class="brand-mark" style="border-color: #74766e;">K<span>/</span></span>
+      <span class="brand-name" style="color: var(--paper);">KONARK AGARWAL <small>MADE WHILE LEARNING</small></span>
+    </a>
+    <span>© <span id="year"></span> KONARK AGARWAL</span>
+    <button type="button" class="back-to-top" id="backToTopBtn" aria-label="Scroll back to top">BACK TO TOP ↑</button>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
