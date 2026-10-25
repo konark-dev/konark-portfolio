@@ -212,6 +212,7 @@
       desc: 'A recipe-discovery experience exploring how people can move from “what should I make?” to a useful next step with structured culinary workflows, ingredient pairing, and precision timers.',
       chips: ['Web app', 'UX exploration', 'Interactive Flows', 'JavaScript'],
       link: 'https://github.com/Konark-Agarwal/cook-craft-flow',
+      live: 'https://cook-craft-flow.vercel.app',
     },
     happy: {
       title: 'Her Happy Place',
@@ -232,18 +233,20 @@
     pramaanflow: {
       title: 'PramaanFlow',
       category: '05 / IDENTITY TECH · FULL-STACK PROJECT',
-      image: 'assets/images/cook.png',
+      image: 'assets/images/pramaanflow.png',
       desc: 'A document verification and identity flow system exploring how digital trust and seamless onboarding can be built for users in India. Built with TypeScript for reliability and scalability.',
       chips: ['TypeScript', 'Full-stack', 'Identity', 'Onboarding'],
       link: 'https://github.com/konark-dev/PramaanFlow',
+      live: 'https://pramaanflow.vercel.app',
     },
     kisanflow: {
-      title: 'Kisan Flow',
+      title: 'Kisan Setu',
       category: '06 / AGRICULTURE TECH · WEB PROJECT',
-      image: 'assets/images/love.png',
-      desc: 'A farmer-centric web platform designed to streamline crop management, advisory services, and supply-chain visibility for Indian farmers. A companion product to AgriVa.',
-      chips: ['TypeScript', 'Web app', 'AgriTech', 'Supply chain'],
+      image: 'assets/images/kisansetu.png',
+      desc: 'A farmer-centric web platform designed to streamline crop management, advisory services, and supply-chain visibility for Indian farmers. Bridging agricultural communities with modern digital tools.',
+      chips: ['TypeScript', 'Web app', 'AgriTech', 'Supply chain', 'Farmers'],
       link: 'https://github.com/konark-dev/kisan-flow',
+      live: 'https://kisansetu-ivory.vercel.app',
     },
   };
 
@@ -271,6 +274,16 @@
 
     const link = document.getElementById('modalProjectLink');
     link.href = data.link;
+
+    const liveLink = document.getElementById('modalProjectLive');
+    if (liveLink) {
+      if (data.live) {
+        liveLink.href = data.live;
+        liveLink.style.display = 'inline-flex';
+      } else {
+        liveLink.style.display = 'none';
+      }
+    }
 
     projectModal.classList.add('open');
     document.body.style.overflow = 'hidden';
